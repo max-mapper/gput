@@ -1,0 +1,23 @@
+{
+  "name": "gput",
+  "version": "1.0.0",
+  "description": "super simple streaming uploads into google drive from the command line",
+  "bin": {
+    "gput": "cli.js"
+  },
+  "author": "Max Ogden",
+  "license": "BSD",
+  "dependencies": {
+    "request": "^2.34.0"
+  },
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maxogden/gput.git"
+  },
+  "bugs": {
+    "url": "https://github.com/maxogden/gput/issues"
+  },
+  "homepage": "https://github.com/maxogden/gput"
+}
