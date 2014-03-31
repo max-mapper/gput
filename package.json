@@ -1,6 +1,6 @@
 {
   "name": "gput",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "super simple streaming uploads into google drive from the command line",
   "bin": {
     "gput": "cli.js"
@@ -8,6 +8,7 @@
   "author": "Max Ogden",
   "license": "BSD",
   "dependencies": {
+    "mime": "^1.2.11",
     "request": "^2.34.0"
   },
   "main": "index.js",

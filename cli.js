@@ -2,22 +2,28 @@
 
 var path = require('path')
 var fs = require('fs')
+var mime = require('mime')
 
 var gput = require('./')
 var configPath = path.join(process.env.HOME || process.env.USERPROFILE, '.config', 'googleauth.json')
 
 var input
+var filename = process.argv[2]
 if (!process.stdin.isTTY) {
   input = process.stdin
-} else if (process.argv[2]) {
-  input = fs.createReadStream(process.argv[2])
+} else if (filename) {
+  input = fs.createReadStream(filename)
 } else {
   throw new Error('no input specified')
 }
 
-var put = gput({
+var opts = {
   token: JSON.parse(fs.readFileSync(configPath)).access_token
-})
+}
+
+if (filename) opts.contentType = mime.lookup(filename)
+
+var put = gput(opts)
 
 input.pipe(put)
 
