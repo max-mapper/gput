@@ -1,0 +1,71 @@
+{
+ "kind": "drive#file",
+ "id": "0B8lSLF293vHqOUJMWDZjR3hjdW8",
+ "etag": "\"sIP8ArR2PAy9qIx8FYkTpbHmKik/MTQwMTQ0NDI2MDMxMQ\"",
+ "selfLink": "https://www.googleapis.com/drive/v2/files/0B8lSLF293vHqOUJMWDZjR3hjdW8",
+ "alternateLink": "https://docs.google.com/folderview?id=0B8lSLF293vHqOUJMWDZjR3hjdW8&usp=drivesdk",
+ "iconLink": "https://ssl.gstatic.com/docs/doclist/images/icon_11_collection_list.png",
+ "title": "foo",
+ "mimeType": "application/vnd.google-apps.folder",
+ "labels": {
+  "starred": false,
+  "hidden": false,
+  "trashed": false,
+  "restricted": false,
+  "viewed": true
+ },
+ "createdDate": "2014-05-30T10:04:20.382Z",
+ "modifiedDate": "2014-05-30T10:04:20.311Z",
+ "modifiedByMeDate": "2014-05-30T10:04:20.311Z",
+ "lastViewedByMeDate": "2014-05-30T10:04:20.311Z",
+ "version": "69947",
+ "parents": [
+  {
+   "kind": "drive#parentReference",
+   "id": "0AMlSLF293vHqUk9PVA",
+   "selfLink": "https://www.googleapis.com/drive/v2/files/0B8lSLF293vHqOUJMWDZjR3hjdW8/parents/0AMlSLF293vHqUk9PVA",
+   "parentLink": "https://www.googleapis.com/drive/v2/files/0AMlSLF293vHqUk9PVA",
+   "isRoot": true
+  }
+ ],
+ "userPermission": {
+  "kind": "drive#permission",
+  "etag": "\"sIP8ArR2PAy9qIx8FYkTpbHmKik/0Pqfsw0GKT0RSxFwlbNoGp6EPAA\"",
+  "id": "me",
+  "selfLink": "https://www.googleapis.com/drive/v2/files/0B8lSLF293vHqOUJMWDZjR3hjdW8/permissions/me",
+  "role": "owner",
+  "type": "user"
+ },
+ "quotaBytesUsed": "0",
+ "ownerNames": [
+  "Max Ogden"
+ ],
+ "owners": [
+  {
+   "kind": "drive#user",
+   "displayName": "Max Ogden",
+   "picture": {
+    "url": "https://lh3.googleusercontent.com/-WKZhrYnBJqw/AAAAAAAAAAI/AAAAAAAAARE/66ThujoQe-Q/s64/photo.jpg"
+   },
+   "isAuthenticatedUser": true,
+   "permissionId": "12823940119870985237",
+   "emailAddress": "maxosmail@gmail.com"
+  }
+ ],
+ "lastModifyingUserName": "Max Ogden",
+ "lastModifyingUser": {
+  "kind": "drive#user",
+  "displayName": "Max Ogden",
+  "picture": {
+   "url": "https://lh3.googleusercontent.com/-WKZhrYnBJqw/AAAAAAAAAAI/AAAAAAAAARE/66ThujoQe-Q/s64/photo.jpg"
+  },
+  "isAuthenticatedUser": true,
+  "permissionId": "12823940119870985237",
+  "emailAddress": "maxosmail@gmail.com"
+ },
+ "editable": true,
+ "copyable": false,
+ "writersCanShare": true,
+ "shared": false,
+ "appDataContents": false
+}

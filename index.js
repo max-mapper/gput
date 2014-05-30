@@ -4,10 +4,15 @@ module.exports = function(opts, cb) {
   if (!opts) opts = {}
   if (!opts.token) return cb(new Error('you must specify google token'))
   
-  return request.post(base + 'files?uploadType=media', {
+  var reqOpts = {
+    url: (opts.base || base) + 'files' + (opts.query || ''),
     headers: {
      'Content-Type': opts.contentType || 'text/plain',
      'Authorization': "Bearer " + opts.token
-    }
-  })
+    },
+    json: opts.json
+  }
+  return request.post(reqOpts, cb)
 }
+
+
