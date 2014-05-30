@@ -9,7 +9,9 @@
   "license": "BSD",
   "dependencies": {
     "mime": "^1.2.11",
-    "request": "^2.34.0"
+    "request": "^2.34.0",
+    "stream-combiner": "0.0.4",
+    "through2": "^0.4.1"
   },
   "main": "index.js",
   "devDependencies": {},

@@ -3,6 +3,7 @@
 var path = require('path')
 var fs = require('fs')
 var mime = require('mime')
+var path = require('path')
 
 var gput = require('./')
 var configPath = path.join(process.env.HOME || process.env.USERPROFILE, '.config', 'googleauth.json')
@@ -17,11 +18,16 @@ if (!process.stdin.isTTY) {
   throw new Error('no input specified')
 }
 
+
+
+if (filename) {
+  opts.metadata = { title: path.basename(filename) }
+  opts.contentType = mime.lookup(filename)
+}
+
 var opts = {
   token: JSON.parse(fs.readFileSync(configPath)).access_token
 }
-
-if (filename) opts.contentType = mime.lookup(filename)
 
 var put = gput(opts)
 
